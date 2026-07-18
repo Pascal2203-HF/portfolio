@@ -1,0 +1,94 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --card-bg: #f8f9fa;
+  --accent: #4361ee;
+  --accent-soft: #eef1ff;
+  --border-color: #e6e6e6;
+}
+
+[data-theme="dark"] {
+  --bg-color: #11141a;
+  --text-color: #eaeaea;
+  --card-bg: #1b1f29;
+  --accent: #6c8cff;
+  --accent-soft: #1d2440;
+  --border-color: #2a2f3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  transition: background-color .3s ease, color .3s ease;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  transition: transform .25s ease, box-shadow .25s ease, background-color .3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.text-accent { color: var(--accent) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.bg-accent-soft { background-color: var(--accent-soft) !important; }
+
+.btn-accent {
+  background-color: var(--accent);
+  border: none;
+  color: #fff;
+}
+.btn-accent:hover { opacity: .9; color: #fff; }
+
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.progress-bar-skill {
+  height: 8px;
+  border-radius: 6px;
+  background-color: var(--accent);
+}
