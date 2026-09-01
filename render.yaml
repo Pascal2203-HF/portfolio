@@ -1,0 +1,11 @@
+services:
+  - type: web
+    runtime: static
+    name: portfolio-p4
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist/portfolio-frontend/browser
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

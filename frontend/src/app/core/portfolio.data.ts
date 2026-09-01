@@ -7,7 +7,7 @@ export const profile: Profile = {
   title: 'Étudiant en Informatique & Développeur Full-Stack',
   short_bio: "Étudiant en Licence Informatique à l’ENI Fianarantsoa, passionné par le développement web et les réseaux.",
   about_text: "Je suis étudiant en informatique à l’École Nationale d’Informatique (ENI) de Fianarantsoa. Je développe des applications web et desktop avec Java, PHP, Python, Angular et JavaScript. J’aime transformer une idée en une application claire, utile et agréable à utiliser.",
-  photo_url: asset('WhatsApp Image 2026-09-01 at 06.46.11.jpeg'), email: 'ptsiferaniaina@gmail.com', phone: '0383269145', location: 'Fianarantsoa, Madagascar', github: '', linkedin: '', facebook: '',
+  photo_url: asset('WhatsApp Image 2026-09-01 at 06.46.11.jpeg'), email: 'ptsiferaniaina@gmail.com', phone: '0383269145', location: 'Fianarantsoa, Madagascar', github: 'https://github.com/Pascal2203-HF', linkedin: '', facebook: '',
 };
 
 export const skills: Skill[] = [
