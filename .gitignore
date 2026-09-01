@@ -1,0 +1,7 @@
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+# Original asset drop-folder; the selected assets are copied under frontend/src/assets.
+sary/
+# The deployed portfolio is frontend-only; the old API is not shipped.
+backend/
